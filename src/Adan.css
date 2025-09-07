@@ -1,0 +1,154 @@
+body {
+  background: #186b6b;
+  margin: 0px;
+  padding: 0px;
+}
+.adan-container {
+  width: 90%;
+  margin: 80px auto;
+  background: teal;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+.city-select {
+  background: white;
+  color: teal;
+  outline: none;
+  border-radius: 8px;
+  font-size: 30px;
+  margin: 10px auto;
+  width: 25%;
+}
+
+.time-card h5 {
+  font-size: 20px;
+}
+
+.times-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+h6 {
+  font-size: 40px;
+  margin-top: 40px !important;
+}
+.time-card {
+  border: solid 3px #006666;
+  background: white;
+  color: teal;
+  width: 13%;
+  margin: 20px 5px;
+  border-radius: 50%;
+  padding: 30px;
+  text-align: center;
+}
+h1,
+h5 {
+  text-align: center;
+}
+
+.header-selec h5 {
+  font-size: 25px;
+  margin: 10px auto;
+}
+.header-selec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+/* 📱 Responsive pour tablettes (≤768px) */
+@media (max-width: 1100px) {
+  .pagejs {
+    margin: 20px 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  .times-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-selec {
+    width: 80%;
+    font-size: 25px;
+    margin: auto;
+  }
+
+  h5 {
+    font-size: 35px;
+  }
+
+  .times-grid {
+    justify-content: center;
+  }
+
+  .time-card {
+    width: 22%; /* 4 cartes max par ligne */
+    border-radius: 20px;
+  }
+  .city-select {
+    margin: 20px auto 20px auto !important;
+  }
+
+  .time-card {
+    width: 70%; /* cartes en pleine largeur */
+    border-radius: 12px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+}
+
+/* 📱 Responsive pour mobiles (≤480px) */
+@media (max-width: 480px) {
+  .pagejs {
+    margin: 20px 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .times-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-selec {
+    width: 60%;
+    font-size: 26px;
+    margin: auto;
+  }
+
+  .city-select {
+    margin: 20px auto 20px auto !important;
+  }
+
+  h5 {
+    margin-bottom: 20px;
+  }
+
+  .time-card {
+    width: 90%; /* cartes en pleine largeur */
+    border-radius: 12px;
+    font-size: 35px;
+  }
+
+  .time-card h1,
+  .time-card h5 {
+    margin: 0px auto !important;
+  }
+
+  .city-select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
